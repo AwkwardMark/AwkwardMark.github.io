@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GreenLeaf Garden Services Business Card</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<meta charset="UTF-8">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url('img/bg.png');
+      }
+      .card {
+        width: 98%;
+        height: 98%;
+        background-image: url('img/bg1.png');
+        box-shadow: 2px 2px 4px #888888;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+		align-items:center;
+        opacity: 0;
+        animation: fade-in 1s ease-in-out forwards;
+	  }
+      h1, h2 {
+        font-weight: normal;
+        margin: 0;
+		text-align: center;
+        opacity: 0;
+        animation: fade-in 1s ease-in-out forwards;
+          var(--animation-delay); 
+      }
+      h1 {
+        font-size: 1.5em;
+        --animation-delay: 0.5s;
+      }
+      h2 {
+        font-size: 1.2em;
+        color: #555
+        --animation-delay: 0.8s;
+      }
+      p {
+        margin: 5px 0;
+		text-align: center;
+        white-space: nowrap;
+        opacity: 0;
+        animation: fade-in 1s ease-in-out forwards;
+          var(--animation-delay);
+      }
+      .contact-info {
+        margin-top: 20px;
+        text-align: center;
+        opacity: 0;
+        animation: fade-in 1s ease-in-out forwards;
+          1s;
+      }
+      .contact-info p {
+        font-size: 0.8em;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 256px;
+        height: 256px;
+        border-radius: 50%;
+        opacity: 0;
+        animation: fade-in 1s ease-in-out forwards;
+          0.5s;
+	  }
+	  
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+	  
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="img/garden.png" alt="Green leaves">
+      <h1>GreenLeaf Garden Services</h1>
+      <h2>O gamă largă de servicii de îngrijire a grădinii și a spațiilor verzi.</h2>
+      <p>Strada Gheorghe Șincai, Nr. 24, București</p>
+      <p>Telefon: 0721 123 456 | Email: office@greenleafgardenservices.ro</p>
+      <div class="contact-info">
+        <p>Contactați-ne pentru îngrijirea grădinii dumneavoastră<i>!</i></p>
+      </div>
+    </div>
+  </body>
+</html>
